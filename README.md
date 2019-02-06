@@ -21,6 +21,7 @@
   - Reviews (of cultural things)
   - Mixes?
   - Diagrams
+  - Maps lol
 - Some things we created, some things we find in the world
 - No overly intellectual language without explaining it
 - Needs to be oriented toward consumption, not jacking off
@@ -28,6 +29,8 @@
 - Editing posts after the fact is forbidden
 - Pseudonyms
 - We need some structure (no excuses) (maybe we need a reward and punishment system)
+- Must be accessible
+- Come up with a clever way to share posts elsewhere (like twitter and instagram)
 
 ## Potential
 - Flowchart/diagramattic vizualization of each conversation?
