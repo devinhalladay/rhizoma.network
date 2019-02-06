@@ -21,7 +21,12 @@
   - Reviews (of cultural things)
   - Mixes?
   - Diagrams
-  - Some things we created, some things we find in the world
+- Some things we created, some things we find in the world
+- No overly intellectual language without explaining it
+- Needs to be oriented toward consumption, not jacking off
+- Footnotes/external sources?
+- Editing posts after the fact is forbidden
+- Pseudonyms
 - We need some structure (no excuses) (maybe we need a reward and punishment system)
 
 ## Potential
@@ -30,4 +35,4 @@
 - "Wha?"
 - Mixup Mode?
 - **Mediating post -> how do we go from one post to another? A traversal! Then it becomes a web of posts where everything is connected.**
-- Clippings? Collections?
+- Clippings? Collections? (PDF mode?)
