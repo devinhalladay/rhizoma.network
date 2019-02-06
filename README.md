@@ -44,8 +44,8 @@
 - Clippings? Collections? (PDF mode?)
 
 # Next Steps
-[] Whiteboard layout options
-[] Finalize feature set
-[] Figure out the best way to build it
-[] Start designing
-[] Start coding
+- [ ] Whiteboard layout options
+- [ ] Finalize feature set
+- [ ] Figure out the best way to build it
+- [ ] Start designing
+- [ ] Start coding
