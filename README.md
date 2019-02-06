@@ -29,6 +29,9 @@
 - Editing posts after the fact is forbidden
 - Pseudonyms
 - We need some structure (no excuses) (maybe we need a reward and punishment system)
+  - Posting timeline: Post a new thread every two weeks, but post a reply every week
+  - Replies should be limited in length? Don't do that thing where your replies are 6 hours of reading.
+  - Anything that goes over a 5-minute read should be forked into its own thread and punished by death.
 - Must be accessible
 - Come up with a clever way to share posts elsewhere (like twitter and instagram)
 
