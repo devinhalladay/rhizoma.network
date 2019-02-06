@@ -2,9 +2,10 @@
 - The Revisionist
 
 # Inspiration
-- (http://snarkmarket.com/) Snark Market
-- (https://www.ribbonfarm.com/) Ribbon Farm
-- [https://web.archive.org/web/20180809163449/http://themavenist.org/] The Mavenist
+- [Snark Market](http://snarkmarket.com/)
+- [Ribbon Farm](https://www.ribbonfarm.com/)
+- [The Mavenist](https://web.archive.org/web/20180809163449/http://themavenist.org/)
+- [Blog Archive](https://v6.robweychert.com/blog/)
 
 # Rules/Mechanics
 ## Final
