@@ -1,5 +1,9 @@
 # Possible Names
 - The Revisionist
+- Meta Meta
+- Infra-something???
+- Metastructure
+- Post-Content
 
 # Inspiration
 - [Snark Market](http://snarkmarket.com/)
