@@ -2,6 +2,10 @@
 layout: default
 ---
 
+{% for collection in site.collections %}
+{{ collection.url }}
+{% endfor %}
+
 <ul class="folders">
   {% for post in site.posts %}
     <li class="folder">

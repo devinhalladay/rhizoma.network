@@ -1,10 +1,15 @@
 title: Post Content
 permalink: /:title
+collections_dir: folders
 # baseurl: "" # the subpath of your site, e.g. /blog
 # url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 collections:
   authors:
+    output: true
+  test:
+    output: true 
+  posty: 
     output: true
 
 # Build settings
