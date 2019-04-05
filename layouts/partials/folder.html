@@ -46,7 +46,7 @@
         <li class="sheet">
           <header>
             <div>
-              <div class="sheet__number">1</div>
+              <div class="sheet__number">{{.File.TranslationBaseName}}</div>
               <div class="sheet__author-avatar">
                 {{- range .Params.authors }}
                   {{- with $.Site.GetPage "taxonomyTerm" (printf "authors/%s" (urlize .)) }}
