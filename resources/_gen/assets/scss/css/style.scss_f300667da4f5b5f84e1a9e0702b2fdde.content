@@ -1,5 +1,34 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
 body {
-  font-family: 'Aileron', sans-serif; }
+  font-family: 'Aileron', sans-serif;
+  margin: 0;
+  padding: 0; }
 
 a {
   color: black;
@@ -13,7 +42,6 @@ ul, li {
   padding: 0; }
 
 .container {
-  padding-top: 140px;
   max-width: 800px;
   margin: auto; }
 
@@ -83,7 +111,6 @@ ul, li {
         width: 30px;
         text-align: center; }
       .folder .sheets .sheet header .sheet-author-avatar {
-        width: 30px;
         text-align: center; }
   .folder a {
     border: 1px solid black;
@@ -182,7 +209,8 @@ ul, li {
 
 .sheet header {
   height: 30px;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  border-top: 1px solid black; }
   .sheet header > div {
     display: flex; }
   .sheet header div > div {
@@ -199,11 +227,13 @@ ul, li {
       width: 30px;
       text-align: center; }
     .sheet header div > div.sheet__author-avatar {
-      width: 30px;
-      height: 30px; }
+      height: 30px;
+      padding: 0px 4px; }
       .sheet header div > div.sheet__author-avatar img {
-        width: 26px;
-        height: 26px; }
+        width: 20px;
+        height: 20px; }
+        .sheet header div > div.sheet__author-avatar img:not(:last-child) {
+          padding-right: 4px; }
     .sheet header div > div.sheet__meta-field {
       color: #5A5A5A;
       padding: 0 10px;
@@ -214,16 +244,32 @@ ul, li {
         padding-right: 5px; }
 
 .folders__folder__header {
-  border-bottom: none; }
+  border-bottom: none;
+  padding-bottom: 20px; }
+  .folders__folder__header h2 {
+    margin-top: 0;
+    margin-bottom: 0; }
   .folders__folder__header a {
-    text-decoration: none; }
+    text-decoration: none;
+    display: flex;
+    align-items: center; }
   .folders__folder__header .folder__date {
     font-size: 14px;
     letter-spacing: 0.05em;
     text-transform: uppercase;
     color: #5A5A5A; }
   .folders__folder__header .folder__title {
-    padding-top: 0.5em; }
+    flex-grow: 1; }
+  .folders__folder__header .folder__authors {
+    align-self: flex-end; }
+  .folders__folder__header .avatar {
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 50%;
+    display: inline-block; }
+    .folders__folder__header .avatar:not(:last-child) {
+      margin-right: 5px; }
 
 .shadow {
   position: absolute;
@@ -235,32 +281,39 @@ ul, li {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(rgba(0, 0, 0, 0.3)));
   background-image: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.3)); }
 
+.folders__folder__container {
+  border: 1px solid black;
+  padding: 20px; }
+
 .folders__folder {
   position: relative;
   overflow: hidden;
   height: auto;
   transition: 0.2s all ease-in-out;
-  max-height: 140px; }
+  max-height: 200px;
+  display: flex;
+  flex-direction: column; }
   .folders__folder:hover {
     max-height: 320px; }
   .folders__folder:not(:first-child) {
-    margin-top: -30px;
-    border-bottom: 1px solid #000; }
+    margin-top: -32px; }
 
 .folders__folder__tab {
   background-color: #fff;
   border: 1px solid black;
   border-bottom: none;
-  height: 30px;
+  max-height: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   width: fit-content;
-  float: right;
   padding-right: 10px;
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
-  z-index: 100; }
+  z-index: 100;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  align-self: flex-end; }
   .folders__folder__tab .tab__icon {
     display: flex;
     justify-content: center;
@@ -274,3 +327,16 @@ ul, li {
 
 .folder__sheets {
   background-color: #fff; }
+
+.site__header {
+  border: 1px solid black;
+  border-top: none;
+  border-radius: 0 0 10px 10px;
+  margin-bottom: 60px;
+  padding: 20px; }
+  .site__header nav ul li {
+    display: inline-block; }
+    .site__header nav ul li:first-child {
+      font-weight: 700; }
+    .site__header nav ul li:not(:last-child) {
+      padding-right: 20px; }
