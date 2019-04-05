@@ -1,0 +1,29 @@
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+{{ .Data.topics }}
+{{ range .Pages }}
+<ul class="folder__sheets">
+  <li class="sheet">
+    <header>
+      <div>
+        <div class="sheet__number">{{ .Title }}</div>
+
+        <div class="sheet__author-avatar">
+          {{- range .Params.authors }}
+          {{- with $.Site.GetPage "taxonomyTerm" (printf "authors/%s" (urlize .)) }}
+          <img src="{{ .Params.photo }}" alt="" />
+          {{ end }}
+          {{ end }}
+        </div>
+        {{if .Params.sheet_type}}<div class="sheet__meta-field"><span>TYPE:</span> {{.Params.sheet_type}}</div>{{end}}
+        {{if .Params.format}}<div class="sheet__meta-field"><span>FORMAT:</span> {{.Params.format}}</div>{{end}}
+      </div>
+    </header>
+    <article>
+      {{ .Content }}
+    </article>
+  </li>
+</ul>
+{{ end }}
+
+{{end}}

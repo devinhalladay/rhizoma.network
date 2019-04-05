@@ -1,0 +1,16 @@
+{{ define "main" }}
+
+  <h1>{{ .Params.name }}</h1>
+  <img src="{{ .Params.photo }}" alt="" />
+
+  <h2>Bio</h2>
+  {{ .Content }}
+
+  <h2>Articles</h2>
+  <ul>
+    {{ range .Data.Pages }}
+    <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+    {{ end }}
+  </ul>
+
+{{ end }}

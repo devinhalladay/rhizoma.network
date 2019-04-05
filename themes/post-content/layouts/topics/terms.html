@@ -1,0 +1,8 @@
+{{ define "main" }}
+<h1>Topics</h1>
+<ul>
+  {{ range $key, $value := .Site.Taxonomies.topics }}
+  <li><a href="/topics/{{ $key | urlize  }}">{{ $key | humanize }}</a> ({{ len $value }})</li>
+  {{ end }}
+</ul>
+{{ end }}
