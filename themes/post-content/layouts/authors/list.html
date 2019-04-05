@@ -9,12 +9,16 @@
   <h2>Articles</h2>
   <ul>
     {{ $folders := slice }}
+    {{ $titles := slice }}
 
     {{ range .Pages }}
       {{ $folders = $folders | append .CurrentSection }}
+      {{ $titles = $titles | append .CurrentSection }}
     {{ end }}
 
-    {{ range uniq $folders }}
+    {{ $folders = union $folders $titles }}
+
+    {{ range $folders }}
       {{ partial "folder" . }}
     {{ end }}
   </ul>
