@@ -1,4 +1,5 @@
 title: Post Content
+permalink: /:title
 # baseurl: "" # the subpath of your site, e.g. /blog
 # url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
@@ -8,7 +9,6 @@ collections:
 
 # Build settings
 markdown: kramdown
-theme: minima
 plugins:
   - jekyll-feed
 

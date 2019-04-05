@@ -1,6 +1,6 @@
 ---
 short_name: devin
 name: Devin Halladay
-avatar: /assets/images/1.jpg
+avatar: /assets/images/devin.svg
 ---
 Devin is a person.
