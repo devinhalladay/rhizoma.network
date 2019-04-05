@@ -252,6 +252,10 @@ h1 {
   article {
     display: flex;
 
+    @media (max-width: 600px) {
+      flex-direction: column;
+    }
+
     .sheet__item,
     .sheet__response {
       flex: 1;
