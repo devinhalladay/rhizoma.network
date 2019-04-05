@@ -385,10 +385,10 @@ h1 {
     height: 30px;
     border: 1px solid black;
     border-radius: 50%;
-    display: inline-block;
     background-size: 80%;
     background-repeat: no-repeat;
     background-position: center;
+    display: inline-block;
 
     &:not(:last-child) {
       margin-right: 5px;
