@@ -1,4 +1,5 @@
 ---
 type: folder
-title:
+title: "{{ replace .Name "-" " " | title }}"
+date: {{ .Date }}
 ---
