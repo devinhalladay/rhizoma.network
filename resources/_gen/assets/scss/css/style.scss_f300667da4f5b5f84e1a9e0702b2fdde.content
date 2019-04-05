@@ -45,6 +45,9 @@ ul, li {
   max-width: 800px;
   margin: auto; }
 
+h1 {
+  padding-bottom: 1em; }
+
 .shadow {
   position: absolute;
   left: 0%;
