@@ -8,6 +8,7 @@
 
   <h2>Articles</h2>
   <ul>
+    <!-- Hack to display each folder only once -->
     {{ $folders := slice }}
     {{ $titles := slice }}
 
@@ -16,6 +17,7 @@
       {{ $titles = $titles | append .CurrentSection }}
     {{ end }}
 
+    <!-- Union any duplicates -->
     {{ $folders = union $folders $titles }}
 
     {{ range $folders }}
