@@ -8,8 +8,14 @@
 
   <h2>Articles</h2>
   <ul>
-    {{ range .Data.Pages }}
-    <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+    {{ $folders := slice }}
+
+    {{ range .Pages }}
+      {{ $folders = $folders | append .CurrentSection }}
+    {{ end }}
+
+    {{ range uniq $folders }}
+      {{ partial "folder" . }}
     {{ end }}
   </ul>
 
