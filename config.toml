@@ -1,6 +1,6 @@
 baseURL = "https://post-content.netlify.com/"
 languageCode = "en-us"
-title = "Post Content"
+title = "Rhizoma"
 [taxonomies]
   author = "authors"
   topic = "topics"

@@ -26,6 +26,7 @@ body {
   font-family: 'Aileron', sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #f5eee3;
 }
 
 a {
@@ -412,6 +413,8 @@ h1 {
 .folders__folder__container {
   border: 1px solid black;
   padding: 20px;
+  background-color: #fff;
+  border-radius: 10px 0 0 0;
 }
 
   .folders__folder {
@@ -428,7 +431,7 @@ h1 {
     }
 
     &:not(:first-child) {
-      margin-top: -32px;
+      margin-top: -42px;
     }
   }
 
