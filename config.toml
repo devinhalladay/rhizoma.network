@@ -1,7 +1,6 @@
 baseURL = "https://post-content.netlify.com/"
 languageCode = "en-us"
 title = "Post Content"
-theme = "post-content"
 [taxonomies]
   author = "authors"
   topic = "topics"
