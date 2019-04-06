@@ -1,8 +1,32 @@
 {{ define "main" }}
-<h1>{{ .Title }}</h1>
-{{ .Data.topics }}
-{{ range .Pages }}
- {{ partial "sheet" . }}
-{{ end }}
+{{ $currentPage := . }}
+<div class="folders__folder">
+{{ partial "folder-tab" . }}
+
+<div class="folders__folder__container">
+  <div class="folders__folder__header">
+    <a href="{{ $currentPage.Permalink }}">
+      <h1 class="folder__title">{{ .Title }}</h1>
+      <div class="folder__authors">
+        {{ $authors := slice }}
+        {{ range .Pages }}
+        {{ $authors = $authors | append .Params.authors }}
+        {{ end }}
+        {{ $authors = $authors | uniq }}
+
+        {{ range $authors }}
+        {{- with $.Site.GetPage "taxonomyTerm" (printf "authors/%s" (urlize .)) }}
+        {{ $photoUrl := .Params.photo }}
+        <div class="avatar" style="background-image: url({{ $photoUrl }})"></div>
+        {{ end }}
+        {{ end }}
+      </div>
+    </a>
+  </div>
+  {{ range.Pages }}
+    {{ partial "sheet" . }}
+  {{ end }}
+</div>
+</div>
 
 {{end}}

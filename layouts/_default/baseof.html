@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     {{- partial "head.html" . -}}
-    <body>
+    <body {{ if eq .Params.type "folder" }}class="folder-singleton"{{ end }}>
         <div class="container">
             {{- partial "header.html" . -}}
             {{- block "main" . }}{{- end }}

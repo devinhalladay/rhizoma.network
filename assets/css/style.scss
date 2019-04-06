@@ -517,3 +517,13 @@ blockquote {
     padding-top: 1em;
   }
 }
+
+.folder-singleton {
+  .folders__folder {
+    max-height: 100%;
+  }
+
+  h1 {
+    padding-bottom: 0;
+  }
+}
