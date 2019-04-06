@@ -30,7 +30,7 @@ body {
 }
 
 a {
-  color: black;
+  color: #251e11;
 }
 
 img {
@@ -46,7 +46,7 @@ ul, li {
   max-width: 800px;
   padding-right: 20px;
   padding-left: 20px;
-  margin: auto;
+  margin-left: auto;
   padding-bottom: 140px;
 }
 
@@ -99,8 +99,8 @@ h1 {
       }
 
       header {
-        border-left: 1px solid black;
-        border-bottom: 1px solid black;
+        border-left: 1px solid #251e11;
+        border-bottom: 1px solid #251e11;
         margin-bottom: 20px;
         height: 30px;
         width: fit-content;
@@ -113,12 +113,12 @@ h1 {
         .sheet-type,
         .sheet-format,
         .sheet-subjects {
-          border-right: 1px solid black;
+          border-right: 1px solid #251e11;
           height: 100%;
           display: flex;
           justify-content: center;
           align-items: center;
-          color: black;
+          color: #251e11;
 
           span {
             color: #5A5A5A;
@@ -145,16 +145,16 @@ h1 {
   }
 
   a {
-    border: 1px solid black;
+    border: 1px solid #251e11;
     padding: 20px;
     display: block;
   }
 
   .folder-tab {
     background-color: #fff;
-    border-top: 1px solid black;
-    border-right: 1px solid black;
-    border-left: 1px solid black;
+    border-top: 1px solid #251e11;
+    border-right: 1px solid #251e11;
+    border-left: 1px solid #251e11;
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
     width: fit-content;
@@ -184,7 +184,7 @@ h1 {
   a > header,
   > header {
     display: flex;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #251e11;
     padding-bottom: 20px;
 
     .fl {
@@ -209,7 +209,7 @@ h1 {
 
   h2 {
     font-size: 24px;
-    color: #000000;
+    color: #251e11;
     font-weight: 500;
     padding: 0;
     margin: 0;
@@ -218,7 +218,7 @@ h1 {
   .avatar {
     width: 30px;
     height: 30px;
-    border: 1px solid black;
+    border: 1px solid #251e11;
     border-radius: 50%;
   }
 }
@@ -286,7 +286,7 @@ h1 {
         flex-direction: row-reverse;
 
         & > div:first-child {
-          border-right: 1px solid black;
+          border-right: 1px solid #251e11;
         }
       }
     }
@@ -299,14 +299,15 @@ h1 {
   header {
     height: 30px;
     margin-bottom: 20px;
-    border-top: 1px solid black;
+    border-top: 1px solid #251e11;
+    background-color: #fbf9f4;
 
     & > div {
       display: flex;
     }
 
     div > div {
-      border: 1px solid black;
+      border: 1px solid #251e11;
       border-top: none;
       align-items: center;
       display: inline-flex;
@@ -344,7 +345,7 @@ h1 {
         height: 30px;
 
         span {
-          color: black;
+          color: #251e11;
           padding-right: 5px;
         }
       }
@@ -385,12 +386,13 @@ h1 {
   .avatar {
     width: 30px;
     height: 30px;
-    border: 1px solid black;
+    border: 1px solid #251e11;
     border-radius: 50%;
     background-size: 80%;
     background-repeat: no-repeat;
     background-position: center;
     display: inline-block;
+    background-color: #fff;
 
     &:not(:last-child) {
       margin-right: 5px;
@@ -411,9 +413,9 @@ h1 {
 }
 
 .folders__folder__container {
-  border: 1px solid black;
+  border: 1px solid #251e11;
   padding: 20px;
-  background-color: #fff;
+  background-color: #fbf9f4;
   border-radius: 10px 0 0 0;
 }
 
@@ -437,8 +439,7 @@ h1 {
 
 
 .folders__folder__tab {
-  background-color: #fff;
-  border: 1px solid black;
+  background-color: #251e11;
   border-bottom: none;
   max-height: 0;
   display: flex;
@@ -460,7 +461,7 @@ h1 {
     width: 30px;
     margin-right: 10px;
     height: 100%;
-    border-right: 1px solid black;
+    border-right: 1px solid white;
   }
 
   ul {
@@ -469,25 +470,40 @@ h1 {
 
       a {
         text-decoration: none;
+        color: white;
       }
     }
   }
 }
 
 .folder__sheets {
-  background-color: #fff;
+  background-color: #fbf9f4;
   padding-bottom: 1em;
 }
 
 .site__header {
-  border: 1px solid black;
+  border: 1px solid #251e11;
   border-top: none;
   border-radius: 0 0 10px 10px;
   margin-bottom: 60px;
   padding: 20px;
+  background-color: #fbf9f4;
 
   nav {
+    align-items: center;
+    display: flex;
+
+    .site__title {
+      flex: 1;
+      font-size: 1.5em;
+      font-family: "Space Mono";
+      text-decoration: none;
+    }
+
     ul {
+      align-self: flex-end;
+      line-height: 2;
+
       li {
         display: inline-block;
 
@@ -511,7 +527,7 @@ blockquote {
   background-color: #efefef;
   padding: 20px;
   margin: 0;
-  color: #000000;
+  color: #251e11;
   border-top: 4px solid #cccccc;
 
   cite {
