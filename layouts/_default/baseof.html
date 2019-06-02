@@ -2,6 +2,7 @@
 <html>
     {{- partial "head.html" . -}}
     <body {{ if eq .Params.type "folder" }}class="folder-singleton"{{ end }}>
+        <div id="sketch"></div>
         <div class="container">
             {{- partial "header.html" . -}}
             {{- block "main" . }}{{- end }}

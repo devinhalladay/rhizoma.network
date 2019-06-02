@@ -1,3 +1,40 @@
+# Posting
+## Terminology
+- **Folder**: The highest-order unit of content on the website. Folders are what you see on the homepage and other index pages, and they contain **Sheets** or **Posts**. In terms of file structure, a Folder is a literal folder in `/content/` containing `_index.md` and `n.md` (where n is an integer beginning at 1).
+- **Sheet/Post**: The second-order unit of content on the website, Sheets are individual Posts that comprise a Folder. In terms of file structure, a Sheet is an individual Markdown (`.md`) file contained inside a Folder and named `n.md` (where n is an integer beginning at 1).
+- **Item/Object**: An evocative object used to spur conversation.
+
+## How to add a Folder
+- Open Terminal and run `hugo new --kind folder foldername`. `foldername` should be an alphanumeric string and can contain hyphens; it will make up the URL for the folder once the site builds.
+- Open your new Folder and open its `_index.md`.
+  - Adjust the title attribute — this is the title of the entire Folder.
+  - Add topics to the topics list to describe the content that will be posted in the Folder.
+- Open your new Folder's first Sheet, `1.md`. Add your author shortname to the author attribute (i.e. `devin` or `tanvi`).
+- Add your Sheet's Item inside the approriate markup (`.sheet__item`). Use `<img>`, `<blockquote>`, or `<iframe>`.
+- Add your Sheet content inside the appropriate markup (`.sheet__response`). Since Markdown doesn't parse Markdown inside of HTML tags, we'll need to write all our own HTML tags. Make sure paragraphs go inside paragraph tags, etc.
+- Push to github.
+
+## How to post inside of a Folder
+- In Finder or your text editor's file tree, find the Folder you'd like to add a Sheet to.
+- Open it up and see what number the latest post is. It might be `1.md` or `5.md` or `n.md`.
+- Create a new file called `(n+1).md` where n is the previous number and +1 is obviously just adding 1 to it. I.e. if the last Sheet is `5.md`, your Sheet will be `6.md`.
+- Copy the following markup and put it in your file, then add your Sheet's Item and Content:
+```
+---
+title: 1
+type: sheet
+date: {{ .Date }}
+authors:
+-
+---
+<div class="sheet__item">
+  
+</div>
+<div class="sheet__response">
+
+</div>
+```
+
 # Possible Names
 - The Revisionist
 - Meta Meta

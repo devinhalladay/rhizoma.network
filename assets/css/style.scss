@@ -546,3 +546,13 @@ blockquote {
     padding-bottom: 0;
   }
 }
+
+#sketch {
+  position: absolute;
+  z-index: -99;
+  flex-grow: 1;
+  padding-left: 20px;
+  display: flex;
+  width: 40%;
+  justify-content: center;
+}

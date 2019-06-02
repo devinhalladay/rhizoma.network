@@ -6,3 +6,8 @@
 {{ $styleSass := resources.Get "css/style.scss" }}
 {{ $styleCSS := $styleSass | resources.ToCSS }}
 <link rel="stylesheet" href="{{ $styleCSS.Permalink }}">
+
+<!-- {{ if or .Params.sketch .IsHome }}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.min.js"></script>
+<script src="/js/app.js"></script>
+{{ end }} -->
