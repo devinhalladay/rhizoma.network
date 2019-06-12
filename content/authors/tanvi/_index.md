@@ -1,5 +1,5 @@
 ---
-name: Tanvi Sharma
-photo: '/images/1.jpg'
+name: Tanvi
+photo: '/images/lambda.svg'
 ---
-Devin is a designer.
+Devin is a designer. 
