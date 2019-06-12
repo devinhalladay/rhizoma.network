@@ -15,25 +15,11 @@
 - Push to github.
 
 ## How to post inside of a Folder
-- In Finder or your text editor's file tree, find the Folder you'd like to add a Sheet to.
-- Open it up and see what number the latest post is. It might be `1.md` or `5.md` or `n.md`.
-- Create a new file called `(n+1).md` where n is the previous number and +1 is obviously just adding 1 to it. I.e. if the last Sheet is `5.md`, your Sheet will be `6.md`.
-- Copy the following markup and put it in your file, then add your Sheet's Item and Content:
-```
----
-title: 1
-type: sheet
-date: {{ .Date }}
-authors:
--
----
-<div class="sheet__item">
-  
-</div>
-<div class="sheet__response">
-
-</div>
-```
+- In Finder or your text editor's file tree, find the Folder you'd like to add a Sheet to inside of `content/`. Take note of the directory name, i.e. `rhizome`.
+- Open it up and take note of the latest post's number. It might be `1.md` or `5.md` or `n.md`, etc.
+- In Terminal, run `hugo new --kind sheet [foldername]/[sheetnumber].md`, where `[foldername]` is the name of the directory/Folder you'd like to add to, and `[sheetnumber]` is the number of the sheet you are adding. I.e. `hugo new --kind sheet rhizome/2.md`
+- Add your Sheet's Item and Content
+- Push to GitHub
 
 # Possible Names
 - The Revisionist
