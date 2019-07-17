@@ -465,6 +465,12 @@ h1 {
   }
 
   ul {
+    .tag + .tag:before {
+      content: ", ";
+      padding-right: 0.2em;
+      color: #fff;
+    }
+
     li {
       display: inline-block;
 
