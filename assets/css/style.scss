@@ -267,6 +267,12 @@ h1 {
     .sheet__item {
       padding-right: 20px;
     }
+
+    .sheet__response {
+      p + p {
+        padding-top: 1em;
+      }
+    }
   }
 
   &:nth-child(even) {
