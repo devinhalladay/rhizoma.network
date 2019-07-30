@@ -3,6 +3,8 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <title>{{ .Site.Title }}</title>
 
+<link href="https://fonts.googleapis.com/css?family=Space+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.typekit.net/uhf6riq.css">
 {{ $styleSass := resources.Get "css/style.scss" }}
 {{ $styleCSS := $styleSass | resources.ToCSS }}
 <link rel="stylesheet" href="{{ $styleCSS.Permalink }}">

@@ -11,7 +11,7 @@
     {{ range .Param $taxonomy }}
     {{ $name := . }}
     {{ with $.Site.GetPage (printf "/%s/%s" $taxonomy ($name | urlize)) }}
-    <li>
+    <li class="tag">
       <a href="{{ .Permalink }}">{{ $name }}</a>
     </li>
     {{ end }}
