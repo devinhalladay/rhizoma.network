@@ -1,5 +1,5 @@
 ---
-name: Devin Halladay
+name: Devin
 photo: '/images/devin.svg'
 ---
-Devin is a designer.
+Devin is a designer and critical theorist.
