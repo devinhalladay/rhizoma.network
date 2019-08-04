@@ -17,7 +17,7 @@
         {{ range $authors }}
         {{- with $.Site.GetPage "taxonomyTerm" (printf "authors/%s" (urlize .)) }}
         {{ $photoUrl := .Params.photo }}
-        <div class="avatar" style="background-image: url({{ $photoUrl }})"></div>
+        <a href="{{ .Permalink }}" class="avatar" style="background-image: url({{ $photoUrl }})"></a>
         {{ end }}
         {{ end }}
       </div>

@@ -35,7 +35,8 @@
           {{ range $authors }}
             {{- with $.Site.GetPage "taxonomyTerm" (printf "authors/%s" (urlize .)) }}
               {{ $photoUrl := .Params.photo }}
-              <div class="avatar" style="background-image: url({{ $photoUrl }})"></div>
+              <a class="avatar" href="{{ .Permalink }}" style="background-image: url({{ $photoUrl }})">
+              </a>
             {{ end }}
           {{ end }}
         </div>
@@ -50,7 +51,7 @@
               <div class="sheet__author-avatar">
                 {{- range .Params.authors }}
                   {{- with $.Site.GetPage "taxonomyTerm" (printf "authors/%s" (urlize .)) }}
-                    <img src="{{ .Params.photo }}" alt="" />
+                    <a href="{{ .Permalink }}"><img src="{{ .Params.photo }}" alt="" /></a>
                   {{ end }}
                 {{ end }}
               </div>
