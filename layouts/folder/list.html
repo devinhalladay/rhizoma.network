@@ -23,7 +23,7 @@
       </div>
     </a>
   </div>
-  {{ range.Pages }}
+  {{ range.Pages.Reverse }}
     {{ partial "sheet" . }}
   {{ end }}
 </div>
