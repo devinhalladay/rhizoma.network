@@ -1,0 +1,11 @@
+{
+  "name": "rhizoma.network",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/devinhalladay/rhizoma.network.git",
+  "author": "Devin Halladay <devin@devinhalladay.com>",
+  "license": "MIT",
+  "scripts": {
+    "folder": "hugo new --kind folder"
+  }
+}

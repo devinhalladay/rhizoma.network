@@ -1,4 +1,4 @@
 ---
-name: Devin
-photo: '/images/devin.svg'
+name: The flowing sky
+photo: '/images/theflowingsky.png'
 ---
