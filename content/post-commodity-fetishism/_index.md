@@ -2,9 +2,7 @@
 type: folder
 title: "Post-Commodity Fetishism"
 topics:
-- Commodity Fetishism
-- Marxism
+- Fetishism
 - Social media influencers
-- Ideology
 - Commodification
 ---
