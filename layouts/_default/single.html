@@ -1,6 +1,20 @@
 {{ define "main" }}
 <div>
-  <h1>{{.Title}}</h1>
-  <div>{{.Content}}</div>
+  <div class="folders__folder">
+    <div class="folders__folder__container">
+      <div class="folders__folder__header">
+        <h2 class="folder__title">{{ .Title }}</h2>
+      </div>
+      <ul class="folder__sheets">
+        <li class="sheet">
+          <article>
+            <div class="sheet__response">
+              {{ .Content }}
+            </div>
+          </article>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 {{ end }}

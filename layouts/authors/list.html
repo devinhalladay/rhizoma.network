@@ -1,12 +1,7 @@
 {{ define "main" }}
 
-  <h1>{{ .Params.name }}</h1>
-  <img src="{{ .Params.photo }}" alt="" />
+  <h1>filed by: {{ .Params.name }}</h1>
 
-  <h2>Bio</h2>
-  {{ .Content }}
-
-  <h2>Articles</h2>
   <ul>
     <!-- Hack to display each folder only once -->
     {{ $folders := slice }}
