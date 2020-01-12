@@ -1,8 +1,25 @@
 {{ define "main" }}
-<h1>Topics</h1>
-<ul>
-  {{ range $key, $value := .Site.Taxonomies.topics }}
-  <li><a href="/topics/{{ $key | urlize  }}">{{ $key | humanize }}</a> ({{ len $value }})</li>
-  {{ end }}
-</ul>
+<div>
+  <div class="folders__folder">
+    <div class="folders__folder__container">
+      <div class="folders__folder__header">
+        <h2 class="folder__title">{{ .Title }}</h2>
+      </div>
+      <ul class="folder__sheets">
+        <li class="sheet">
+          <article>
+            <div class="sheet__response">
+              {{ .Content }}
+              <ul>
+                {{ range $key, $value := .Site.Taxonomies.topics }}
+                <li><a href="/topics/{{ $key | urlize  }}">{{ $key | humanize }}</a> ({{ len $value }})</li>
+                {{ end }}
+              </ul>
+            </div>
+          </article>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
 {{ end }}
